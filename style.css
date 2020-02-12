@@ -15,7 +15,8 @@ ul.main-menu {
 }
 ul.main-menu>li {
     display: inline;
-    border-right: 5px solid black;
+    padding: 1px;
+    border-right: 1px solid black;
 }
 ul.main-menu>li.last-child {
     border-right: none
