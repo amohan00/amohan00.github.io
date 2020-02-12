@@ -22,3 +22,10 @@ ul.main-menu a:hover {
     background-color: #ddd;
     color: black;
 }
+img.bio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200;
+    width: 250;
+}
