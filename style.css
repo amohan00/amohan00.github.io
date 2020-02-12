@@ -11,8 +11,6 @@ ul.main-menu {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    background-color: darkolivegreen;
-    overflow: hidden;
     font-size: 20px;
 }
 ul.main-menu>li {
