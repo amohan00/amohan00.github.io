@@ -18,14 +18,7 @@ ul.main-menu>li {
     padding: 1px;
     border-right: 1px solid black;
 }
-ul.main-menu>li.last-child {
-    border-right: none
-}
 ul.main-menu a:hover {
     background-color: #ddd;
     color: black;
-}
-.bio {
-    border: 2px;
-    padding: 10px;
 }
