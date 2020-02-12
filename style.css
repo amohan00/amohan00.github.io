@@ -44,3 +44,7 @@ ul.sub-menu a:hover {
     height: 200px;
     width: 250px;
 }
+p {
+    font-family: Georgia;
+    font-size: 15px;
+}
