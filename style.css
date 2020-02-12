@@ -1,7 +1,7 @@
 h1 { color: lightgray; }
 ul.main-menu {
     list-style-type: none;
-    margin: 0;
+    margin: 70px;
     padding: 0;
 }
 ul.main-menu>li {
