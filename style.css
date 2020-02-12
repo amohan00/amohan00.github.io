@@ -7,6 +7,10 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
+ul.embed {
+    font-family: Georgia;
+    font-size: 15px;
+}    
 ul.main-menu {
     list-style-type: none;
     text-align: center;
