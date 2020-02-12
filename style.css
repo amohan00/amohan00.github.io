@@ -52,3 +52,6 @@ p {
     font-family: Georgia;
     font-size: 15px;
 }
+li.first {
+    border-left: 1px solid black;
+}
