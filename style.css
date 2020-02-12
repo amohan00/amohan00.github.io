@@ -1,11 +1,11 @@
 h1 { 
-    color: lightgray;
+    color: darkgreen;
     font-size: 50px;
     text-align: center;
 }
 ul.main-menu {
     list-style-type: none;
-    margin: 30px;
+    text-align: center;
     padding: 0;
     font-size: 17px
 }
