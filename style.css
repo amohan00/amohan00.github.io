@@ -1,7 +1,11 @@
-h1 { color: lightgray; }
+h1 { 
+    color: lightgray;
+    font-size: 50px;
+    text-align: center;
+}
 ul.main-menu {
     list-style-type: none;
-    margin: 40px;
+    margin: 30px;
     padding: 0;
     font-size: 17px
 }
