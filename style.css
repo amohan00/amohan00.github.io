@@ -22,7 +22,7 @@ ul.main-menu a:hover {
     background-color: #ddd;
     color: black;
 }
-img.bio {
+.bio {
     display: block;
     margin-left: auto;
     margin-right: auto;
