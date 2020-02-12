@@ -11,8 +11,14 @@ ul.main-menu {
     list-style-type: none;
     text-align: center;
     padding: 0;
+    background-color: darkolivegreen;
+    overflow: hidden;
     font-size: 20px;
 }
 ul.main-menu>li {
     display: inline;
+}
+ul.main-menu a:hover {
+    background-color: #ddd;
+    color: black;
 }
