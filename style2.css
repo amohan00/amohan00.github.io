@@ -5,21 +5,17 @@ ul.main {
   overflow: hidden;
   background-color: #333;
 }
-
 ul.main li {
   float: left;
-  color: white;
-}
-ul.main li.active {
-  background-color: darkgreen;
-}
-ul.main a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-ul.main a:hover {
+.active {
+  background-color: #4CAF50;
+}
+ul.main a:hover:not(.active) {
   background-color: #111;
 }
