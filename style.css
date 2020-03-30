@@ -68,5 +68,7 @@ li.first {
 }
 table.checklist, table.checklist th, table.checklist td {
     border: 2px solid black;
+}
+table.checklist th, table.checklist td {
     padding: 10px;
 }
