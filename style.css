@@ -22,9 +22,6 @@ ul.main {
   overflow: hidden;
   background-color: #333;
 }
-ul.main li {
-  float: left;
-}
 ul.main li a {
   display: inline-block;
   color: white;
