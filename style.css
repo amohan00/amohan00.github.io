@@ -17,7 +17,7 @@ ul.main-menu {
     padding: 0;
     font-size: 20px;
     border: 1px solid #e7e7e7;
-    background-color: blue;
+    background-color: darkgreen;
 }
 ul.main-menu>li {
     display: inline;
