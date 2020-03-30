@@ -10,17 +10,26 @@ h1 {
 ul.embed {
     font-family: Georgia;
     font-size: 15px;
-}    
+}
 ul.main-menu {
     list-style-type: none;
     text-align: center;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
     font-size: 20px;
 }
 ul.main-menu>li {
     display: inline;
     padding: 1px;
     border-right: 1px solid black;
+}
+ul.main-menu li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 ul.main-menu a:hover {
     background-color: #ddd;
