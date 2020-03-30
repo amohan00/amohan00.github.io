@@ -16,6 +16,8 @@ ul.main-menu {
     text-align: center;
     padding: 0;
     font-size: 20px;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
 ul.main-menu>li {
     display: inline;
