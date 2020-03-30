@@ -1,0 +1,24 @@
+ul.main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.main {
+  float: left;
+}
+
+a.main {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+a.main:hover {
+  background-color: #111;
+}
