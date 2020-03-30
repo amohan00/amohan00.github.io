@@ -7,15 +7,17 @@ ul.main {
 }
 ul.main li {
   float: left;
+}
+ul.main li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+ul.main li a:hover:not(.active) {
+  background-color: #111;
+}
 .active {
   background-color: #4CAF50;
-}
-ul.main a:hover:not(.active) {
-  background-color: #111;
 }
