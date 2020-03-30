@@ -15,6 +15,7 @@ ul.embed {
     font-size: 15px;
 }
 ul.main {
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ ul.main li {
   float: left;
 }
 ul.main li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
