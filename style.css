@@ -15,15 +15,17 @@ ul.embed {
     font-size: 15px;
 }
 ul.main {
-  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
+ul.main li {
+  float: left;
+}
 ul.main li a {
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
