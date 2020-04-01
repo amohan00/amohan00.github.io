@@ -72,3 +72,7 @@ table.checklist, table.checklist th, table.checklist td {
 table.checklist th, table.checklist td {
     padding: 10px;
 }
+tr.done {
+    background-color: darkgreen;
+    text-color: white;
+}
