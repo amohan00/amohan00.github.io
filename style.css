@@ -74,5 +74,5 @@ table.checklist th, table.checklist td {
 }
 tr.done {
     background-color: darkgreen;
-    text-color: white;
+    color: white;
 }
