@@ -1,0 +1,27 @@
+/* Hello World Component using Quickstart
+import { Component } from '@angular/core';
+
+@Component ({
+   selector: 'my-app',
+   template: `<h1>Hello {{name}}</h1>`,
+})
+export class AppComponent  { name = 'World'; }
+/*
+
+// import functionality from existing modules
+import { NgModule }      from '@angular/core'; 
+import { BrowserModule } from '@angular/platform-browser';  
+import { AppComponent }  from './app.component';  
+// define import, declaration, and bootstrapping options
+@NgModule ({ 
+   imports:      [ BrowserModule ], // required by default for any web based app
+   declarations: [ AppComponent ], 
+   bootstrap:    [ AppComponent ] // tells Angular which component to bootstrap
+}) 
+export class AppModule { } 
+
+/* Module components
+Bootstrap array - add components to be loaded. Needs to be declared to use across other comp.
+Export Array - export components, directives, pipes to use in other modules
+Import array - import functionality from other Angular modules
+/*
