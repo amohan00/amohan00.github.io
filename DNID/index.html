@@ -55,12 +55,21 @@
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <div class="card-header">
-                                Cases by state   
+                                Cases by state
+                                <form action="/action_page.php">
+                                  <label for="state">Choose a state:</label>
+                                  <select name="state" id="state">
+                                    <option value="United States/Pennsylvania" selected>Pennsylvania</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                                  <input type="submit" value="Submit">
+                                </form>
                             </div>
                             <div class="card-body">
-                                <div class="bingwidget" data-type="covid19_modules" data-modules='[{"_type": "stats", "location-id":"/United States/Pennsylvania"}, 
-                                                                                                  {"_type": "stats", "location-id":"/United States"},
-                                                                                                  {"_type": "trends", "location-id":"/United States"}]'></div>
+                                <div class="bingwidget" data-type="covid19_modules" data-modules='[{"_type": "stats", "location-id":"state"}, 
+                                                                                                  {"_type": "trends", "location-id":"state"}]'></div>
                                 <script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
                               </div>
                         </div>
