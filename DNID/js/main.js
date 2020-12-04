@@ -4,8 +4,10 @@ function menuClick(x) {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
+    document.getElementsByClassName("navbar").style.opacity = "0.6";
 }
   
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    document.body.style.opacity = 1;
 }
