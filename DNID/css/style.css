@@ -41,7 +41,7 @@ header {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: #f7f7f7;
@@ -94,18 +94,27 @@ header {
 
 .pitt-website {
     font-size: medium;
-    margin-bottom: 35px;
+    margin-bottom: 0;
     padding-top: 7px;
     background-color: #ffb81c;
     text-align: center;
     border: none;
+    border-radius: 0%;
+    z-index: auto;
 }
 
 .faq-alert {
-    margin-bottom: 0;
-    max-width: 90%;
-    padding: 10px;
-    background-color: #ffc953;
+    padding: 4px;
+    margin-top: -4px;
+    background-color: #3366ff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 0%;
+}
+
+.faq-alert button {
+    line-height: 0;
 }
 
 body {
@@ -121,6 +130,11 @@ h1 {
     padding-left: 70px;
 }
 
+.faqTitle {
+    padding-left: 65px;
+    padding-top: 15px;
+}
+
 footer {
     background-color: #f2f2f2;
     text-align: center;
@@ -129,10 +143,17 @@ footer {
 }
 
 .accordion {
-    padding-bottom: 15px;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
     max-width: 90%;
     align-items: center;
 }
 
 .accordion button {
     color: black;
+}
+
+.widget {
+    margin-top: 15px;
+}
