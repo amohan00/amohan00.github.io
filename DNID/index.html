@@ -8,24 +8,15 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body onload ="callScript()">
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
         <script>
-        var posture;
-        function callScript(){
-            function handleResponse(response) {
-                posture = response;
-            }
-            goPython(handleResponse);
-        }
-        function goPython(handleResponse){
-            $.ajax({
-              url: "posture.py",
-             sucess: function(response){
-                   handleResponse(response);
-             }
-            });
-        }
-        document.getElementById("demo").innerHTML = posture;
+            var posture;
+            fetch('http://localhost/foo.txt')
+              .then(response => response.text())
+              .then((data) => {
+                posture
+                })
+            document.getElementById("pos").innerHTML = posture;
         </script>
         <header>
             <div class="navbar">
@@ -69,8 +60,7 @@
                                 Pitt Risk Posture  
                             </div>
                             <div class="card-body posture">
-                                <p class="demo">
-                                    
+                                <p id="pos">
                                 </p>
                             </div>
                         </div>
