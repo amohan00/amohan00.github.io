@@ -157,31 +157,33 @@
         </script>
         <!-- js function that reads data from files created by web-scraping -->
         <script>
-            var txtFile = new XMLHttpRequest();
-            var allText = "file not found";
-            txtFile.onreadystatechange = function () {
-            if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
-                allText = txtFile.responseText;
-                allText = allText.split("\n").join("<br>");
+            // server request
+            var myFile = new XMLHttpRequest();
+            var allData = "file not found";
+            myFile.onreadystatechange = function () {
+            // Check if file is found and openable
+            if (myFile.readyState === XMLHttpRequest.DONE && myFile.status == 200) {
+                allData = myFile.responseText;
+                allData = allData.split("\n").join("<br>");
             }
-
-             document.getElementById('pos').innerHTML = allText;
+            // Write to HTML
+             document.getElementById('pos').innerHTML = allData;
             }
-            txtFile.open("GET", 'posture.txt', true);
-            txtFile.send(null);
+            myFile.open("GET", 'posture.txt', true);
+            myFile.send(null);
         
-            var txtFile2 = new XMLHttpRequest();
-            var allText2 = "file not found";
-            txtFile2.onreadystatechange = function () {
-            if (txtFile2.readyState === XMLHttpRequest.DONE && txtFile2.status == 200) {
-                allText2 = txtFile2.responseText;
-                allText2 = allText2.split("\n").join("<br>");
+            var myFile2 = new XMLHttpRequest();
+            var allData2 = "file not found";
+            myFile2.onreadystatechange = function () {
+            if (myFile2.readyState === XMLHttpRequest.DONE && myFile2.status == 200) {
+                allData2 = myFile2.responseText;
+                allData2 = allData2.split("\n").join("<br>");
             }
 
-             document.getElementById('stu').innerHTML = allText2;
+             document.getElementById('stu').innerHTML = allData2;
             }
-            txtFile2.open("GET", 'study.txt', true);
-            txtFile2.send(null);
+            myFile2.open("GET", 'study.txt', true);
+            myFile2.send(null);
         </script>
     </body>
 </html>
