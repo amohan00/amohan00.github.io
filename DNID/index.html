@@ -9,25 +9,29 @@
     </head>
     <body onload ="callScript()">
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>
-        function callScript(){
-            $.ajax({
-              url: "posture.py",
-             context: document.body
-            }).done(function() {
-            });
-        }
-    </script>
-    <script type="text/javascript">
-    <script>
-        var posture;
-        fetch('posture.txt')
-          .then(response => response.text())
-          .then((data) => {
-            posture
-            })
-        document.getElementById("pos").innerHTML = posture;
-    </script>
+        <script>
+            var pyResponse;
+            function callScript() {
+                function handleResponse(response) {
+                    pyResponse = response;
+                    document.getElementById("pos").innerHTML = pyResponse;
+                //here you may want to do something with the response
+                //like calling a function that uses the global variable ajaxResponse
+
+                //alert(response);
+                }
+                goPython(handleResponse);
+             };
+
+             function goPython(handleReponse) {
+                $.ajax({
+                    url: "/currentcost.py",
+                    success: function(response){
+                        handleResponse(response);
+                    }
+                 });
+             }
+        </script>
         <header>
             <div class="navbar">
                 <div class="container d-flex justify-content-between">
