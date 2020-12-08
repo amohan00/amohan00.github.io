@@ -132,7 +132,7 @@ h1 {
 
 .faqTitle {
     padding-left: 65px;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 footer {
@@ -156,4 +156,44 @@ footer {
 
 .widget {
     margin-top: 15px;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-text {
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.scroll {
+    overflow-y: scroll;
+    max-height: 530px;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.states {
+    padding-top: 0;
+    padding-right: 23px;
+    max-height: 530px;
+    overflow: hidden;
+}
+
+.posture {
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-size: 18px;
+    letter-spacing: 1.7px;
+}
+
+.study {
+    padding-top: 5px;
+    overflow-y: scroll;
+    max-height: 254px;
 }
