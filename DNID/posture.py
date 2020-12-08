@@ -29,6 +29,5 @@ def pitt_posture():
 			postures.append(temp)
 			#f.write(temp + '\n')
 	#f.close()
-	print(postures)
 	return postures
 pitt_posture()
