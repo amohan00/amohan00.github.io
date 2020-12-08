@@ -3,7 +3,7 @@ function menuClick(x) {
 }
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("mySidebar").style.width = "275px";
     document.getElementsByClassName("navbar").style.opacity = "0.6";
 }
   
