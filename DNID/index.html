@@ -20,6 +20,7 @@
                  });
              }
         </script>
+        <!-- js function that reads data from files created by web-scraping -->
         <script>
             var txtFile = new XMLHttpRequest();
             var allText = "file not found";
@@ -29,10 +30,23 @@
                 allText = allText.split("\n").join("<br>");
             }
 
-             document.getElementById('txt').innerHTML = allText;
+             document.getElementById('pos').innerHTML = allText;
             }
-            txtFile.open("GET", 'study.txt', true);
+            txtFile.open("GET", 'posture.txt', true);
             txtFile.send(null);
+            
+            var txtFile2 = new XMLHttpRequest();
+            var allText2 = "file not found";
+            txtFile2.onreadystatechange = function () {
+            if (txtFile2.readyState === XMLHttpRequest.DONE && txtFile2.status == 200) {
+                allText2 = txtFile2.responseText;
+                allText2 = allText2.split("\n").join("<br>");
+            }
+
+             document.getElementById('stu').innerHTML = allText2;
+            }
+            txtFile2.open("GET", 'study.txt', true);
+            txtFile2.send(null);
         </script>
         <header>
             <div class="navbar">
@@ -88,7 +102,7 @@
                                 Study Spaces and Capacities 
                             </div>
                             <div class="card-body study">
-                                <p id="txt">
+                                <p id="stu">
                                 </p>
                             </div>
                         </div>
