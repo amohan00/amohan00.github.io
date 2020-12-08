@@ -8,18 +8,26 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body onload ="goPython()">
+    <body onload ="callScript()">
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>
-        function goPython(){
+        var posture;
+        function callScript(){
+            function handleResponse(response) {
+                posture = response;
+            }
+            goPython(handleResponse);
+        }
+        function goPython(handleResponse){
             $.ajax({
               url: "posture.py",
-             context: document.body
-            }).done(function() {
-             alert('finished python script');;
+             sucess: function(response){
+                   handleResponse(response);
+             }
             });
         }
-    </script>
+        document.getElementById("demo").innerHTML = var;
+        </script>
         <header>
             <div class="navbar">
                 <div class="container d-flex justify-content-between">
@@ -71,15 +79,7 @@
                                 Pitt Risk Posture  
                             </div>
                             <div class="card-body">
-                                <p><strong>Guarded Risk</strong><br />
-                                   Greensburg<br />
-                                   Titusville<br />
-                                   <strong>Elevated Risk</strong><br />
-                                   Pittsburgh<br />
-                                   Johnstown<br />
-                                   Bradford<br />
-                                   <strong>High Risk</strong><br />
-                                   None
+                                <p id="demo">
                                 </p>
                             </div>
                         </div>
