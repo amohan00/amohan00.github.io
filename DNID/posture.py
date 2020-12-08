@@ -14,14 +14,18 @@ def pitt_posture():
 	section = soup.find(class_="views-field views-field-views-conditional")
 	group = section.find_all('div', class_='')
 	postures = []
+	f = open("posture.txt", "w")
 	for x in group:
 		# Print risk posture
 		stat = x.find('h4')
 		temp = stat.get_text()
-		postures.append(temp)
+		f.write(temp + '\n')
 		# Print campuses
 		campus = x.find_all('li')
 		for y in campus:
 			temp = y.get_text()
-			postures.append(temp)
-	return postures
+			temp = temp[:-2]
+			f.write(temp + '\n')
+	f.close()
+
+pitt_posture()
