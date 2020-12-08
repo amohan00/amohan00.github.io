@@ -20,17 +20,18 @@
              }
         </script>
         <script>
-            var file = new XMLHttpRequest();
-            file.open("GET", "study.txt", true);
-            file.onreadystatechange = function() {
-                if (file.readyState === 4) {  // Makes sure the document is ready to parse
-                    if (file.status === 200) {  // Makes sure it's found the file
-                        text = file.responseText;
-                        document.getElementById("study").innerHTML = text;
-                    }
-                }
+            var txtFile = new XMLHttpRequest();
+            var allText = "file not found";
+            txtFile.onreadystatechange = function () {
+            if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+                allText = txtFile.responseText;
+                allText = allText.split("\n").join("<br>");
             }
-        }
+
+             document.getElementById('txt').innerHTML = allText;
+            }
+            txtFile.open("GET", 'study.txt', true);
+            txtFile.send(null);
         </script>
         <header>
             <div class="navbar">
@@ -86,7 +87,7 @@
                                 Study Spaces and Capacities 
                             </div>
                             <div class="card-body study">
-                                <p id="study">
+                                <p id="txt">
                                 </p>
                             </div>
                         </div>
