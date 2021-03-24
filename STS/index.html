@@ -2,9 +2,50 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
 <body>
 
-  <p>Hello world</p>
+  <div class="w3-container">
+  <h1>Movies 2014</h1>
+</div>
+
+<div class="w3-cell-row">
+  <div class="w3-cell">
+    <img src="img_avatar.jpg">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Frozen</h3>
+      <p>The response to the animations was ridiculous.</p>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3>Footer</h3>
+</div>
+  
+  <nav class="w3-sidebar w3-bar-block w3-card" style="width:30%">
+<div class="w3-red">
+  <a href="javascript:void(0)" onclick="closeSidebar()"
+  class="w3-button w3-display-topright w3-xlarge">X</a>
+    <div class="w3-padding-large w3-center">
+      <img class="w3-circle" src="img_avatar.jpg" alt="avatar">
+   </div>
+  </div>
+<a class="w3-bar-item w3-button" href="#">Home</a>
+<a class="w3-bar-item w3-button" href="#">Friends</a>
+<a class="w3-bar-item w3-button" href="#">Messages</a>
+</nav>
+
+<script>
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 
 </body>
 </html>
