@@ -1,0 +1,62 @@
+body {
+    background-color: lightgrey;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+h1 { 
+    color: darkgreen;
+    font-size: 40px;
+    text-align: center;
+}
+ul.main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.bio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 300px;
+}
+p {
+    font-family: Georgia;
+    font-size: 15px;
+}
+table.inner, table.inner tr, table.inner td {
+    border: 2px solid darkgreen;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+}
+/*table.inner tr {
+    border: 2px solid darkgreen;
+    border-collapse: collapse;
+    width: 50%;
+}*/
+#outer {
+    margin-left: auto;
+    margin-right: auto;
+}
+th.bighead {
+    font-size: 20px;
+    border: 2px solid darkgreen;
+    border-collapse: collapse;
+    text-align: center;
+}
+th.conf {
+    font-size: 25px;
+    font-style: italic;
+    border: none;
+    text-align: center;
+}
+td.space {
+    padding: 12px;
+    /*border: 2px solid darkgreen;*/
+}
