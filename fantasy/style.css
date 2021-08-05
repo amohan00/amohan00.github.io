@@ -27,7 +27,7 @@ ul.main {
 }
 p {
     font-family: Georgia;
-    font-size: 15px;
+    font-size: 20px;
 }
 table.inner, table.inner tr, table.inner td {
     border: 2px solid darkgreen;
@@ -40,7 +40,7 @@ table.inner, table.inner tr, table.inner td {
     border-collapse: collapse;
     width: 50%;
 }*/
-#outer {
+table.outer {
     margin-left: auto;
     margin-right: auto;
 }
