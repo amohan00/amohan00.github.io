@@ -58,5 +58,6 @@ th.conf {
 }
 td.space {
     padding: 12px;
+    width: 50%;
     /*border: 2px solid darkgreen;*/
 }
