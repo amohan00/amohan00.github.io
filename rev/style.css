@@ -6,7 +6,7 @@ body {
     margin-bottom: 50px;
 }
 h1 { 
-    color: tomato;
+    color: black;
     font-size: 40px;
     text-align: center;
 }
@@ -46,8 +46,8 @@ ul.main {
 
 .logo {
     display: block;
-    height: 150px;
-    width: 477px;
+    height: 50px;
+    width: 150px;
 }
 p {
     font-family: Georgia;
@@ -69,4 +69,10 @@ td.space {
 h3 {
     color: black;
     font-size: 30px;
+}
+
+div.section {
+    background-color: burlywood;
+    border-style: double;
+    border-color: black;
 }
