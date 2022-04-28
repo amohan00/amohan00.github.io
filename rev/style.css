@@ -71,7 +71,13 @@ h3 {
     font-size: 30px;
 }
 
-div.section {
+div.section1 {
+    background-color: white;
+    border-style: double;
+    border-color: black;
+}
+
+div.section2 {
     background-color: burlywood;
     border-style: double;
     border-color: black;
