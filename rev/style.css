@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: white;
     margin-top: 50px;
     margin-right: 0px;
     margin-left: 0px;
@@ -55,33 +55,12 @@ p {
 table.inner {
     font-size: 18px;
 }
-table.inner, table.inner tr, table.inner td {
-    border: 2px solid darkgreen;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 3px;
-}
-/*table.inner tr {
-    border: 2px solid darkgreen;
-    border-collapse: collapse;
-    width: 50%;
-}*/
 table.outer {
     margin-left: auto;
     margin-right: auto;
 }
-th.bighead {
-    font-size: 20px;
-    border: 2px solid orange;
-    border-collapse: collapse;
-    text-align: center;
-}
-th.conf {
-    font-size: 25px;
-    font-style: italic;
-    border: none;
-    text-align: center;
-}
+
+
 td.space {
     padding: 12px;
     width: 33%;
