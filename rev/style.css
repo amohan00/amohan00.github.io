@@ -6,7 +6,7 @@ body {
     margin-bottom: 50px;
 }
 h1 { 
-    color: orangered;
+    color: tomato;
     font-size: 40px;
     text-align: center;
 }
@@ -44,10 +44,10 @@ ul.main {
   background-color: #333;
 }
 
-.bio {
+.logo {
     display: block;
-    height: 100px;
-    width: 150px;
+    height: 150px;
+    width: 477px;
 }
 p {
     font-family: Georgia;
