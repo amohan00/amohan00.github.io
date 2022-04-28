@@ -6,7 +6,7 @@ body {
     margin-bottom: 50px;
 }
 h1 { 
-    color: orange;
+    color: orangered;
     font-size: 40px;
     text-align: center;
 }
@@ -62,11 +62,11 @@ table.outer {
 
 td.space {
     padding: 12px;
-    width: 33%;
+    width: 50%;
     /*border: 2px solid darkgreen;*/
 }
 
 h3 {
-    color: orange;
+    color: black;
     font-size: 30px;
 }
