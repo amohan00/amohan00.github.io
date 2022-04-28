@@ -25,14 +25,17 @@ ul.maintop li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  margin: 5px;
   text-decoration: none;
 }
+/*
 ul.maintop li a:hover:not(.active) {
   background-color: #111;
 }
 .active {
   background-color: orangered;
 }
+*/
 ul.main {
   list-style-type: none;
   margin: 0;
@@ -43,8 +46,6 @@ ul.main {
 
 .bio {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 100px;
     width: 150px;
 }
